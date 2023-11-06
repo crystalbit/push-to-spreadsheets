@@ -11,7 +11,7 @@ export class Spreadsheet {
     keyFile: string,
   ) {
     const auth = new google.auth.GoogleAuth({
-      keyFile: keyFile,
+      keyFile,
       scopes: SCOPES,
     });
     this.sheets = google.sheets({ version: 'v4', auth });
@@ -62,4 +62,4 @@ export class Spreadsheet {
       },
     });
   }
-};
+}
