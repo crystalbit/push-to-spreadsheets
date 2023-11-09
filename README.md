@@ -1,5 +1,5 @@
 # simple-google-spreadsheets
-Limited functionality google spreadsheets lib for JavaScript
+Limited functionality google spreadsheets lib for JavaScript and TypeScript
 
 # Instruction
 Package aim is to push data to a Google Spreadsheet you first need a service account.
