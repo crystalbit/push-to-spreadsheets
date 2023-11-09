@@ -40,7 +40,7 @@ export class Spreadsheet {
         }
       }
     }
-    if (rowIndex === values?.length) {
+    if (rowIndex === (values?.length ?? 0)) {
       // store new item in reference
       const writeRange = `${sheet}!${referenceColumn}${rowIndex + 1}:${referenceColumn}${rowIndex + 1}`;
     /*const updateResponse =*/ await this.sheets.spreadsheets.values.update({
