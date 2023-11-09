@@ -1,6 +1,6 @@
 {
   "name": "push-to-spreadsheets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple lib for putting data into Google Spreadsheets",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
