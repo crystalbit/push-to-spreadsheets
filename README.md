@@ -1,13 +1,16 @@
-# simple-google-spreadsheets
+# push-to-spreadsheets
 Limited functionality google spreadsheets lib for JavaScript and TypeScript
 
 # Instruction
-Package aim is to push data to a Google Spreadsheet you first need a service account.
+Package aim is to push data to a Google Spreadsheet.
 
 ### Methods
-For now there is only one method: `putDataNear(sheet: string, referenceColumn: string, reference: string, targetColumn: string, data: string): Promise<void>;`  
+For now there is only one method: 
+```TypeScript
+putDataNear(sheet: string, referenceColumn: string, reference: string, targetColumn: string, data: string): Promise<void>;
+```  
 
-It puts data in `targetColumn` in same row eith `referenceColumn`. It tries to find `reference` value and if doesn't find, it creates a new row with `reference` and `data`.
+It puts data in `targetColumn` in same row with `referenceColumn`. It tries to find `reference` value and if doesn't find, it creates a new row with `reference` and `data`.
 
 ### How to get it and connect to google table:
 1. Create a Google Cloud Platform Project:
